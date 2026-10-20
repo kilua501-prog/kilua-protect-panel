@@ -1,0 +1,85 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KILUA Protect | Dashboard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #eef2ff;
+    }
+    header {
+      padding: 24px;
+      background: #111a30;
+      border-bottom: 1px solid #273653;
+    }
+    header h1 { margin: 0; color: #8b9dff; }
+    header p { color: #aab7d4; margin-bottom: 0; }
+    main { max-width: 1000px; margin: auto; padding: 24px; }
+    .status {
+      background: #112c2b;
+      border: 1px solid #24645a;
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 22px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #141d33;
+      border: 1px solid #293957;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .card h2 { font-size: 18px; }
+    .muted { color: #aab7d4; }
+    .tag { color: #a8f0d2; font-weight: bold; }
+    footer { text-align: center; padding: 28px; color: #8998b7; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🛡️ KILUA Protect</h1>
+    <p>Tableau de bord de protection Discord</p>
+  </header>
+
+  <main>
+    <section class="status">
+      <strong>● Panel opérationnel</strong>
+      <p class="muted">Le site fonctionne. La connexion au bot sera configurée ensuite.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>🤖 Bot Discord</h2>
+        <p class="tag">Site disponible</p>
+        <p class="muted">L'état réel du bot sera affiché après connexion au serveur.</p>
+      </article>
+
+      <article class="card">
+        <h2>🛡️ Protection</h2>
+        <p class="muted">Les paramètres de sécurité seront ajoutés à la prochaine étape.</p>
+      </article>
+
+      <article class="card">
+        <h2>⚙️ Configuration</h2>
+        <p class="muted">Les réglages du serveur seront disponibles après la connexion Discord.</p>
+      </article>
+
+      <article class="card">
+        <h2>🔐 Connexion</h2>
+        <p class="muted">La connexion OAuth2 sera configurée après la publication du site.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>KILUA Protect · Panel communautaire</footer>
+</body>
+</html>
